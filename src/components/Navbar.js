@@ -16,23 +16,26 @@ const Navbar = () => {
         >
 
             {/* signin link */}
-            <NavLink to="/signin">
+            <NavLink activeClassName="active" to="/signin">
                 <Text size="xl" color="white">Sign In</Text>
             </NavLink>
 
             {/* logo & title */}
-            <NavLink to="/">
-                <Box height={50} width={50}>
-                    <Image
-                        alt="Kevin Boyle Art"
-                        naturalHeight={1}
-                        naturalWidth={1}
-                        src="./logo.svg"
-                    />
+            <NavLink activeClassName="active" exact to="/">
+                <Box display="flex" alignItems="center">
+                    <Box height={35} width={50}>
+                        <Image
+                            alt="Kevin Boyle Art"
+                            naturalHeight={1}
+                            naturalWidth={1}
+                            marginRight={2}
+                            src="./logo.svg"
+                        />
+                    </Box>
+                    <Heading size="sx" color="orange">
+                        Kevin Boyle <br /> Art
+                    </Heading>
                 </Box>
-                <Heading size="sx" color="orange">
-                    Kevin Boyle Art
-                </Heading>
             </NavLink>
 
 
@@ -40,8 +43,8 @@ const Navbar = () => {
 
 
             {/* signup link */}
-            <NavLink to="/signup">
-                <Text size="xl" color="white">Sign In</Text>
+            <NavLink activeClassName="active" to="/signup">
+                <Text size="xl" color="white">Sign Up</Text>
             </NavLink>
 
 
