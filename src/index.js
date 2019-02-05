@@ -9,6 +9,8 @@ import Navbar from './components/Navbar';
 import Signin from './components/Signin';
 import Signup from './components/Signup';
 import Checkout from './components/Checkout';
+import P5Wrapper from 'react-p5-wrapper';
+import sketch from './components/Sketch';
 import 'gestalt/dist/gestalt.css';
 
 import * as serviceWorker from './serviceWorker';
@@ -26,6 +28,7 @@ const Root = () => (
                 <Route component={Signup} path="/signup" />
                 <Route component={Checkout} path="/checkout" />
             </Switch>
+            <P5Wrapper sketch={sketch} />
         </React.Fragment>
     </Router>
 )
