@@ -30,7 +30,7 @@ class App extends Component {
         }
       });
       // console.log(response);
-      this.setState({ prints: response })
+      this.setState({ prints: response.data.prints })
     } catch (err){
       console.log(err);
     }
@@ -60,8 +60,11 @@ class App extends Component {
             >
               <Card 
                 image={
-                  <Box>
+                  <Box height={200} width={200}>
                     <Image 
+                      alt="Print"
+                      naturalHeight={1}
+                      naturalWidth={1}
                       src={`${apiUrl}${print.image.url}`}
                     />
                   </Box>
