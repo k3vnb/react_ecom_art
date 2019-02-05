@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Box, Text, Heading, Image } from 'gestalt'
 import { NavLink } from 'react-router-dom'
 
@@ -32,7 +32,7 @@ const Navbar = () => {
                             src="./logo.svg"
                         />
                     </Box>
-                    <Heading size="sx" color="orange">
+                    <Heading size="xs" color="orange">
                         Kevin Boyle <br /> Art
                     </Heading>
                 </Box>
